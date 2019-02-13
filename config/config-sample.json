@@ -10,6 +10,7 @@
     "callbackURL":"http://localhost:3000/login",
     "authURL":"https://account.codingblocks.com/oauth/authorize",
     "tokenURL":"https://account.codingblocks.com/oauth/token",
+    "meURL":"https://account.codingblocks.com/api/users/me",
     "minio": {
       "bucket": "bucket-name",
       "endpoint": "minio.xyz.com",
@@ -28,6 +29,7 @@
     "callbackURL":"",
     "authURL":"https://account.codingblocks.com/oauth/authorize",
     "tokenURL":"https://account.codingblocks.com/oauth/token",
+    "meURL":"https://account.codingblocks.com/api/users/me",
     "minio": {
       "bucket": "bucket-name",
       "endpoint": "minio.xyz.com",
@@ -46,6 +48,7 @@
     "callbackURL":"",
     "authURL":"https://account.codingblocks.com/oauth/authorize",
     "tokenURL":"https://account.codingblocks.com/oauth/token",
+    "meURL":"https://account.codingblocks.com/api/users/me",
     "minio": {
       "bucket": "bucket-name",
       "endpoint": "minio.xyz.com",

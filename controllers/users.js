@@ -8,7 +8,7 @@ module.exports = {
   login: async (req, res, next) => {
     const options = {
       method: 'POST',
-      uri: 'https://account.codingblocks.com/oauth/token',
+      uri: secrets.tokenURL,
       body: {
         "client_id" : secrets.clientId,
         "redirect_uri" : secrets.callbackURL,
@@ -23,7 +23,7 @@ module.exports = {
       response_token = Res.access_token
       const options2 = {
         method: 'GET',
-        uri: 'https://account.codingblocks.com/api/users/me',
+        uri: secrets.meURL,
         headers: {
           "Authorization" : `Bearer ${response_token}`
         },
@@ -39,7 +39,8 @@ module.exports = {
             oneauthId: data.id,
             username: data.username,
             firstname: data.firstname, 
-            lastname: data.lastname
+            lastname: data.lastname,
+            wakatime_api_key: data.wakatime_api_key
           }
         })
         debugger;

@@ -4,7 +4,8 @@ module.exports = (sequelize, DataTypes) => {
     oneauthId: DataTypes.BIGINT,
     username: DataTypes.STRING,
     firstname: DataTypes.STRING,
-    lastname: DataTypes.STRING
+    lastname: DataTypes.STRING,
+    wakatime_api_key: DataTypes.STRING
   }, {});
   user.associate = function(models) {
     user.hasOne(models.token);
